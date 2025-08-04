@@ -7,6 +7,10 @@ This project implements a real-time event-driven system to monitor and analyze t
 
 The core of this solution is an Azure Logic App that orchestrates the entire workflow. It acts as the central nervous system, connecting the event ingestion, analysis, and notification components. The architecture follows a serverless, event-driven pattern.
 
+### Architecture Diagram
+
+![Taxi Events Flow Chart](architecture_and_logic_app_steps.png)
+
 ### Architecture Flow:
 - **Event Ingestion**: Trip events are generated and sent to an Azure Event Hub.
 - **Trigger**: The Logic App is triggered on a batch of events from the Event Hub.
